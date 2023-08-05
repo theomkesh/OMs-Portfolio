@@ -1,0 +1,636 @@
+
+
+
+.navbar {
+    background-color: rgb(16, 168, 239);
+    height: 60px;
+    border: 2px solid transparent;
+    border-radius: 90px; 
+}
+
+@media (max-width:480px) {
+   .navbar {
+        background-color: rgb(16, 168, 239); 
+        height: 40px;
+        width: 100%;
+        border: 2px solid transparent;
+        border-radius: 3px;
+    }
+
+}
+
+.navbt {
+    position: relative;
+    top: 15px;
+    margin-left: 18px;
+    height: 30px;
+    width: 70px;
+    background-color: rgb(16, 168, 239);
+    color: whitesmoke;
+    border: 1px solid transparent;
+    transition: all ease-in 4ms;
+}
+
+@media (max-width: 480px) { 
+    .navbt {
+        position: relative;
+        top: 8.9px;
+        margin-left: 28px;
+        height: 15px;
+        width: 40px;
+        background-color: rgb(16, 168, 239);
+        color: whitesmoke;
+        border: 1px solid transparent;
+        transition: all ease-in 4ms;
+    }
+    
+}
+    
+
+
+.navbt:hover {
+    background-color: whitesmoke;
+    color: rgb(16, 168, 239);
+    border-color:rgba(2, 2, 7, 0.805);
+    border: 2px solid whitesmoke;
+    border-radius: 0.2rem;
+    box-shadow: 3px 3px 1px black;
+}
+
+@media (hover: hover) {
+    .navbt:hover {
+        background-color: none;
+        color: none;
+        border-color:none ;
+        border: none;
+        border-radius: none;
+        box-shadow: none;
+    }
+  }
+
+
+.main {
+    background-image: url(bgimg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 825px;
+    width: auto;
+    border: 2px solid transparent;
+    border-radius: 40px;
+}
+
+@media (max-width: 480px) {
+    .main {
+        background-image: url(bgimgMQ.jpg);
+        background-repeat: round;
+        border: 2px solid transparent;
+        border-radius: 2px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .main {
+        background-image: url(bgimgMQ.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: 2px solid transparent;
+        border-radius: 40px;
+    }   
+}
+
+
+
+ .pic {
+   width: 320px;
+   height: 350px;
+   position: absolute;
+   top: 190px;
+   left: 80px;
+    }
+
+    @media (max-width: 480px) {
+        .pic {
+            width: 90px;
+            height: 120px;
+            position: absolute;
+            top: 90px;
+            left: 20px;
+        }
+    }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 320px;
+    height: 350px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    box-shadow: 15px 15px 2px;
+    border: 3px solid rgb(16, 168, 239);
+    border-radius: 20px;
+  }
+  
+  @media (max-width: 480px) {
+    .image {
+        opacity: 1;
+        display: block;
+        width: 160px;
+        height: 180px;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        box-shadow: 15px 15px 2px;
+        border: 3px solid rgb(16, 168, 239);
+        border-radius: 20px;
+    }
+}
+
+  .middle {
+    transition: ease-in;
+    opacity: 0;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: justify;
+    border: 2px solid transparent;
+    border-radius: 13px;
+  }
+  
+  .pic:hover .image {
+   opacity: 2;
+    transition-timing-function: ease-in-out;
+    transition-duration: 6ms;
+    transition-delay: 2ms;
+  }
+
+  .pic:hover .image {
+    transition-duration: 6ms;
+    border-radius: 20px;
+    border: 5px solid ;
+    border-radius: 13px;
+    border-color: whitesmoke;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .pic:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color:rgba(16, 168, 239, 0.601);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border: 2px solid white;
+    border-radius: 13px;
+}
+/*
+@media (max-width: 480px) {
+    .texts {
+        position: relative;
+        text-align: center;
+        color: whitesmoke;
+        top: 360px;
+        left: 20px;
+    }
+}*/
+
+.texts {
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+    top: 460px;
+}
+
+
+
+.nme {
+    position: absolute;
+    bottom: 220px;
+    left: 770px;
+    font-weight: bolder;
+    font-size: 50px;
+    text-shadow: 3px 3px 1px black;
+}
+
+@media (max-width: 480px) {
+    .nme {
+        position: relative;
+        top: -400px;
+        left: 100px;
+        font-weight: bolder;
+        font-size: 20px;
+        text-shadow: 3px 3px 1px black;
+    }
+}
+
+.nm2 {
+    position: absolute;
+    bottom: 180px;
+    left: 835px;
+    color: rgb(186, 233, 255);
+}
+
+@media (max-width: 480px) {
+    .nm2 {
+        position: relative;
+        top: -260px;
+        left: 3px;
+        color: rgb(186, 233, 255);
+        font-size: 18px;
+        text-align: center;
+        bottom: 5px;
+    }
+}
+
+.nm3 {
+    position: absolute;
+    bottom: 10px;
+    left: 715px;
+    color: rgb(186, 233, 255);
+    font-size: 30px;
+}
+
+@media (max-width: 480px) {
+    .nm3 {
+        position: relative;
+        top: -140px;
+        left: 1px;
+        color: rgb(186, 233, 255);
+        font-size: 29px;
+        text-align: center; 
+        margin-left: 30px;
+        margin-right: 30px; 
+    }
+}
+
+i {
+    font-size: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    position: absolute;
+    left: 880px;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        display: flex;
+        justify-content: space-around;
+        width: 180px;
+        position: absolute;
+        left: 110px; 
+        top: 250px;
+    }
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.dv {
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .dv {
+        margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    }
+}
+
+.nm3:hover {
+    text-shadow: 5px 5px 1px black;
+}
+
+.nm2:hover {
+    border: 2px solid black;
+    color: whitesmoke;
+    background-color: rgb(16, 168, 239);
+    border-radius: 4px;
+    box-shadow: 3px 3px 1px black; 
+}
+
+/* Home Page */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.heelo {
+    
+    font-size: 50px;
+    color: rgb(186, 233, 255);
+    position: absolute;
+    top: 550px;
+    left: 50px;
+    text-shadow: 2px 2px 1px black;
+}
+
+
+.selfpic {
+    height: 320px;
+    width: 260px;
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    border: 3px solid rgb(16, 168, 239);
+    border-radius: 3px;
+    box-shadow: 9px 9px 5px rgb(30, 30, 30);
+}
+
+.intro {
+    background-image: url(bgimg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 900px;
+    width: auto;
+    border: 2px solid transparent;
+    border-radius: 40px;
+}
+
+.info {
+    height: 360px;
+    width: 640px;
+    position: absolute;
+    left: 550px;
+    margin-top: 65px;
+    top: 100px;
+    background-color: rgba(0, 0, 0, 0.471);
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+.info:hover {
+    box-shadow: 15px 15px 7px black;
+    border: 3px solid rgb(186, 233, 255);
+}
+
+#infor {
+    color: whitesmoke;
+    position: absolute;
+    top: 33px;
+    left: 15px;
+    font-size: 20px;
+}
+
+#table2 {
+    height: 270px;
+    width: 835px;
+    position: absolute;
+    left: 550px;
+    top: 590px;
+    background-color: rgba(0, 0, 0, 0.471);
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+#table2:hover {
+    box-shadow: 15px 15px 7px black;
+    border: 3px solid rgb(186, 233, 255);
+}
+
+#table3 {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    right: 20px;
+    font-size: 15px;
+    gap: 2rem;
+    
+}
+
+.eduhead {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 25px;
+}
+
+table, th, td {
+    border: 3px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: rgba(186, 233, 255, 1.0);
+  }
+
+ .selfpic:hover {
+    border-radius: 10px;
+    border-color: rgb(186, 233, 255);
+    border: 5px solid rgb(186, 233, 255);
+    box-shadow: 15px 15px 9px rgb(30, 30, 30);
+ }
+
+ 
+
+
+/* Blog Page*/
+
+.bgimgsec {
+    height: 700px;
+    width: auto;
+    background-image:url(homebg.jpeg);
+    border: 2px solid rgb(186, 233, 255);
+    border-radius: 35px;
+}
+
+.card1 {
+    height: 380px;
+    width: 320px;
+    position: absolute;
+    top: 240px;
+    left: 80px;
+    background-color: rgb(186, 233, 255);
+    border: 2px solid rgba(16, 168, 239, 0.601);
+}
+
+.card1:hover {
+    border: 5px solid white;
+    box-shadow: 10px 10px 5px black;
+}
+
+.bloghed {
+    position: absolute;
+    top: 100px;
+    left: 33%;
+    font-size: 50px;
+    color: rgb(186, 233, 255);
+    text-shadow: 5px 5px 1px rgb(0, 0, 0);
+}
+
+#crd {
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    text-shadow: 2px 2px 0px whitesmoke;
+    position: relative;
+    top: 3px;
+    font-size: 23px;
+}
+
+#crd2 {
+    font-family: sans-serif;
+    color: rgba(16, 168, 239, 0.601);
+    font-size: medium;
+    position: relative;
+    top: 15px;
+    left: 3px;
+    right: 3px;
+}       
+
+#crd2:hover {
+    font-size: bold;
+    color: rgb(16, 168, 239);
+    text-shadow: 2px 2px 1px white;
+}
+
+#crd3 {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(16, 168, 239, 0.601);
+    color: white;
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+
+#crd3:hover {
+    border: 4px solid white;
+    border-radius: 5px;
+}
+
+.card2 {
+    height: 380px;
+    width: 320px;
+    position: absolute;
+    top: 240px;
+    left: 580px;
+    background-color: rgb(186, 233, 255);
+    border: 2px solid rgba(16, 168, 239, 0.601);
+}
+
+.card2:hover {
+    border: 5px solid white;
+    box-shadow: 10px 10px 5px black;
+}
+
+.card3 {
+    height: 380px;
+    width: 320px;
+    position: absolute;
+    top: 240px;
+    left: 1080px;
+    background-color: rgb(186, 233, 255);
+    border: 2px solid rgba(16, 168, 239, 0.601);
+}
+
+.card3:hover {
+    border: 5px solid white;
+    box-shadow: 10px 10px 5px black;
+}
+
+
+/*resume page*/
+
+#rsmepg {
+    border: 10px solid white;
+    border-radius: 25px;
+    position: absolute;
+    top: 80px;
+    left: 30%;
+    height: 680px;
+    width: 500px;
+    margin-bottom: 70px;
+}
+
+    #rsmdwnld {
+    height: 50px;
+    width: 140px;
+    background-color: rgb(186, 233, 255);
+    border: 2px solid rgb(16, 168, 239);
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    left: 31%;  
+    }
+#rsmdwnld:hover {
+    border: 3px solid white;
+    border-radius: 10px;
+    color: rgb(186, 233, 255);
+    background-color: rgb(16, 168, 239);
+    cursor: pointer;
+}
+
+
+
+/*Contact Page*/
+
+.main2 {
+    background-image: url(bgimg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 825px;
+    width: auto;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+    #contactdetails {
+    height: 410px;
+    width: 430px;
+    background-color: rgba(0, 0, 0, 0.486);
+    border: 2px solid transparent;
+    position: absolute;
+    padding-left: 20px;
+    top: 150px;
+    left: 40px;
+    font-size: 26px;
+    color: white;
+    border-radius: 20px;
+    }
+
+    #contactdetails:hover {
+    border: 4px solid white;
+    border-radius: 30px;
+    box-shadow: 15px 15px 5px black;
+    color: rgb(186, 233, 255);
+    padding-left: 15px;
+    }
+
+    #socialmedia {
+    height: 410px;
+    width: 430px;
+    background-color: rgba(0, 0, 0, 0.486);
+    border: 2px solid transparent;
+    position: absolute;
+    top: 150px;
+    left: 550px;
+    font-size: 26px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    }
+
+
+    #socialmedia:hover {
+    border: 4px solid white;
+    border-radius: 30px;
+    box-shadow: 15px 15px 5px black;
+    color: rgb(186, 233, 255);
+    }
+
+
