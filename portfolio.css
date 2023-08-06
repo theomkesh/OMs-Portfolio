@@ -45,7 +45,6 @@
     }
     
 }
-    
 
 
 .navbt:hover {
@@ -57,14 +56,14 @@
     box-shadow: 3px 3px 1px black;
 }
 
-@media (hover: hover) {
+@media (max-width: 768px) {
     .navbt:hover {
-        background-color: none;
-        color: none;
-        border-color:none ;
-        border: none;
-        border-radius: none;
-        box-shadow: none;
+      background-color: initial;
+      color: initial;
+      border-color: initial;
+      border: initial;
+      border-radius: initial;
+      box-shadow: initial;
     }
   }
 
@@ -73,7 +72,7 @@
     background-image: url(bgimg.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 825px;
+    height: 995px;
     width: auto;
     border: 2px solid transparent;
     border-radius: 40px;
@@ -164,6 +163,13 @@
     transition-delay: 2ms;
   }
 
+  @media (max-width: 768px) {
+    .pic:hover .image {
+      opacity: 1; /* Set opacity to its regular value */
+      transition: none; /* Remove all transitions for the hover effect */
+    }
+  }
+
   .pic:hover .image {
     transition-duration: 6ms;
     border-radius: 20px;
@@ -177,6 +183,23 @@
     opacity: 1;
   }
   
+/* Media query to turn off hover effect */
+@media (max-width: 768px) {
+    .pic:hover .image {
+      transition-duration: 0ms; /* Set transition duration to 0 */
+      border: none; /* Remove border */
+      border-radius: 0; /* Reset border radius */
+    }
+    
+    .pic:hover .middle {
+      opacity: 0; /* Set opacity to 0 */
+    }
+  }
+
+  
+  
+  
+
   .text {
     background-color:rgba(16, 168, 239, 0.601);
     color: white;
@@ -185,16 +208,6 @@
     border: 2px solid white;
     border-radius: 13px;
 }
-/*
-@media (max-width: 480px) {
-    .texts {
-        position: relative;
-        text-align: center;
-        color: whitesmoke;
-        top: 360px;
-        left: 20px;
-    }
-}*/
 
 .texts {
     position: relative;
@@ -284,7 +297,7 @@ i {
         width: 180px;
         position: absolute;
         left: 110px; 
-        top: 250px;
+        top: 340px;
     }
 }
 
@@ -321,6 +334,20 @@ a{
     box-shadow: 3px 3px 1px black; 
 }
 
+@media (max-width: 768px) {
+    .nm3:hover {
+      text-shadow: none; /* Remove text-shadow */
+    }
+  
+    .nm2:hover {
+      border: none; /* Remove border */
+      color: initial; /* Reset color */
+      background-color: initial; /* Reset background-color */
+      border-radius: initial; /* Reset border-radius */
+      box-shadow: none; /* Remove box-shadow */
+    }
+  }
+
 /* Home Page */
 
 *{
@@ -339,6 +366,25 @@ a{
 }
 
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .heelo {
+      font-size: 40px; /* Adjust font size for smaller screens */
+      top: 420px; /* Adjust top position for smaller screens */
+      left: 60px; /* Adjust left position for smaller screens */
+      text-shadow: 5px 5px 2px black; /* Remove text-shadow for smaller screens */
+    }
+  }
+  
+  /* Media query for even smaller screens */
+  @media (max-width: 480px) {
+    .heelo {
+      font-size: 40px; /* Adjust font size for even smaller screens */
+      top: 420px; /* Adjust top position for even smaller screens */
+      left: 75px; /* Adjust left position for even smaller screens */
+    }
+  }
+
 .selfpic {
     height: 320px;
     width: 260px;
@@ -348,6 +394,19 @@ a{
     border: 3px solid rgb(16, 168, 239);
     border-radius: 3px;
     box-shadow: 9px 9px 5px rgb(30, 30, 30);
+}
+
+@media (max-width: 480px) {
+  .selfpic  {
+    height: 280px;
+    width: 220px;
+    position: absolute;
+    top: 110px;
+    left: 85px;
+    border: 3px solid rgb(16, 168, 239);
+    border-radius: 3px;
+    box-shadow: 9px 9px 5px rgb(30, 30, 30);
+    }
 }
 
 .intro {
@@ -360,6 +419,22 @@ a{
     border-radius: 40px;
 }
 
+@media (max-width: 480px) {
+    .intro {
+        background-image: url(bgimgMQ.jpg);
+        background-repeat: no-repeat;
+       background-size: cover;
+        height: 1500px;
+        width: auto;
+        border: 2px solid transparent;
+        border-radius: 15px;   
+ /* Optional: Keeps the background fixed while scrolling */
+
+    }
+}
+
+
+
 .info {
     height: 360px;
     width: 640px;
@@ -370,6 +445,20 @@ a{
     background-color: rgba(0, 0, 0, 0.471);
     border: 2px solid transparent;
     border-radius: 20px;
+}
+
+@media (max-width: 480px) {
+    .info {
+        height: 360px;
+        width: 370px;
+        position: absolute;
+        left: 20px;
+        margin-top: 0px;
+        top: 550px;
+        background-color: rgba(0, 0, 0, 0.471);
+        border: 2px solid transparent;
+        border-radius: 20px;
+    }
 }
 
 .info:hover {
@@ -385,6 +474,17 @@ a{
     font-size: 20px;
 }
 
+@media (max-width:480px) {
+    #infor {
+        color: whitesmoke;
+        position: absolute;
+        top: 33px;
+        left: 15px;
+        font-size: 19px;
+    }
+    
+}
+
 #table2 {
     height: 270px;
     width: 835px;
@@ -394,6 +494,19 @@ a{
     background-color: rgba(0, 0, 0, 0.471);
     border: 2px solid transparent;
     border-radius: 20px;
+}
+
+@media (max-width: 480px) {
+    #table2 {
+        height: 450px;
+        width: 555px;
+        position: absolute;
+        left: 10px;
+        top: 960px;
+        background-color: rgba(0, 0, 0, 0.471);
+        border: 2px solid transparent;
+        border-radius: 20px;
+    }
 }
 
 #table2:hover {
@@ -447,6 +560,16 @@ table, th, td {
     border-radius: 35px;
 }
 
+@media (max-width:480px) {
+    .bgimgsec {
+        height: 1800px;
+        width: auto;
+        background-image: url(homebg.jpeg);
+        border: 2px solid rgb(186, 233, 255);
+        border-radius: 15px;
+}
+}
+
 .card1 {
     height: 380px;
     width: 320px;
@@ -471,6 +594,17 @@ table, th, td {
     text-shadow: 5px 5px 1px rgb(0, 0, 0);
 }
 
+@media (max-width: 480px) {
+    .bloghed {
+        position: absolute;
+        top: 100px;
+        left: 25px;
+        font-size: 50px;
+        color: rgb(186, 233, 255);
+        text-shadow: 5px 5px 1px rgb(0, 0, 0);
+    }
+}
+
 #crd {
     text-align: center;
     font-family: sans-serif;
@@ -481,6 +615,20 @@ table, th, td {
     font-size: 23px;
 }
 
+@media (max-width:480px){
+    .card1 {
+        height: 380px;
+        width: 320px;
+        position: absolute;
+        top: 320px;
+        left: 40px;
+        background-color: rgb(186, 233, 255);
+        border: 2px solid rgba(16, 168, 239, 0.601);
+    }
+}
+
+
+
 #crd2 {
     font-family: sans-serif;
     color: rgba(16, 168, 239, 0.601);
@@ -490,6 +638,8 @@ table, th, td {
     left: 3px;
     right: 3px;
 }       
+
+
 
 #crd2:hover {
     font-size: bold;
@@ -508,6 +658,18 @@ table, th, td {
     cursor: pointer;
 }
 
+@media (max-width:480px) {
+    .card3 {
+        height: 380px;
+        width: 320px;
+        position: absolute;
+        top: 1340px;
+        left: 45px;
+        background-color: rgb(186, 233, 255);
+        border: 2px solid rgba(16, 168, 239, 0.601);
+    }
+}
+
 #crd3:hover {
     border: 4px solid white;
     border-radius: 5px;
@@ -523,6 +685,18 @@ table, th, td {
     border: 2px solid rgba(16, 168, 239, 0.601);
 }
 
+@media (max-width:480px) {
+    .card2{
+        height: 380px;
+        width: 320px;
+        position: absolute;
+        top: 840px;
+        left: 45px;
+        background-color: rgb(186, 233, 255);
+        border: 2px solid rgba(16, 168, 239, 0.601);
+    }
+}
+
 .card2:hover {
     border: 5px solid white;
     box-shadow: 10px 10px 5px black;
@@ -536,6 +710,18 @@ table, th, td {
     left: 1080px;
     background-color: rgb(186, 233, 255);
     border: 2px solid rgba(16, 168, 239, 0.601);
+}
+
+@media (max-width:480px) {
+    .card3 {
+        height: 380px;
+        width: 320px;
+        position: absolute;
+        top: 1340px;
+        left: 45px;
+        background-color: rgb(186, 233, 255);
+        border: 2px solid rgba(16, 168, 239, 0.601);
+    }
 }
 
 .card3:hover {
@@ -557,6 +743,19 @@ table, th, td {
     margin-bottom: 70px;
 }
 
+@media (max-width:480px) {
+    #rsmepg {
+        border: 10px solid white;
+        border-radius: 25px;
+        position: absolute;
+        top: 80px;
+        left: 5px;
+        height: 680px;
+        width: 500px;
+        margin-bottom: 70px;
+    }
+}
+
     #rsmdwnld {
     height: 50px;
     width: 140px;
@@ -565,8 +764,22 @@ table, th, td {
     border-radius: 5px;
     position: absolute;
     top: 25px;
-    left: 31%;  
+    left: 45%;  
     }
+
+    @media (max-width: 480px) {
+        #rsmdwnld {
+            height: 50px;
+            width: 140px;
+            background-color: rgb(186, 233, 255);
+            border: 2px solid rgb(16, 168, 239);
+            border-radius: 5px;
+            position: absolute;
+            top: 25px;
+            left: 20px;  
+            }
+    }
+
 #rsmdwnld:hover {
     border: 3px solid white;
     border-radius: 10px;
@@ -589,6 +802,20 @@ table, th, td {
     border-radius: 40px;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
+
+@media (max-width: 480px) {
+    .main2 {
+        background-image: url(bgimgMQ.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 1000px;
+        width: auto;
+        border: 2px solid transparent;
+        border-radius: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+}
+
     #contactdetails {
     height: 410px;
     width: 430px;
@@ -596,11 +823,27 @@ table, th, td {
     border: 2px solid transparent;
     position: absolute;
     padding-left: 20px;
-    top: 150px;
-    left: 40px;
+    top: 148px;
+    left: 20px;
     font-size: 26px;
     color: white;
     border-radius: 20px;
+    }
+
+    @media (max-width:480px) {
+        #contactdetails {
+        height: 330px;
+        width: 330px;
+        background-color: rgba(0, 0, 0, 0.486);
+        border: 2px solid transparent;
+        position: absolute;
+        padding-left: 20px;
+        top: 60px;
+        left: 20px;
+        font-size: 19px;
+        color: white;
+        border-radius: 20px;
+    } 
     }
 
     #contactdetails:hover {
@@ -625,6 +868,22 @@ table, th, td {
     text-align: center;
     }
 
+    @media (max-width:480px) {
+        #socialmedia {
+            height: 450px;
+            width: 370px;
+            background-color: rgba(0, 0, 0, 0.486);
+            border: 2px solid transparent;
+            position: absolute;
+            top: 430px;
+            left: 20px;
+            font-size: 26px;
+            color: white;
+            border-radius: 20px;
+            text-align: center;
+        }
+    }
+
 
     #socialmedia:hover {
     border: 4px solid white;
@@ -634,3 +893,76 @@ table, th, td {
     }
 
 
+/*Blogs*/
+
+/*BLog 1*/
+
+.bgimageblog {
+    background-image: url(bgimg.jpg);
+    height: 1200px;
+    width: auto;
+}
+
+@media (max-width: 480px){
+    .bgimageblog {
+        background-image: url(bgimgMQ.jpg);
+        height: 2500px;
+        width: auto;
+    }
+}
+
+.matterblg {
+    height: 820px;
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.329);
+    position: absolute;
+    left: 30px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    top: 30px;
+
+}
+
+@media (max-width:480px){
+    .matterblg {
+        height: 2020px;
+        width: 330px;
+        background-color: rgba(0, 0, 0, 0.329);
+        position: absolute;
+        left: 40px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 30px;
+        top: 30px;
+        color: white;
+    }
+}
+
+.matterblg2 {
+    height: 1020px;
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.329);
+    position: absolute;
+    left: 40px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    top: 30px;
+
+}
+
+@media (max-width:480px){
+    .matterblg2 {
+        height: 2280px;
+        width: 340px;
+        background-color: rgba(0, 0, 0, 0.329);
+        position: absolute;
+        left: 30px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 30px;
+        top: 30px;
+        color: white;
+    }
+}
